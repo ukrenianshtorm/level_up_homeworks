@@ -1,5 +1,44 @@
-body {
-  background-color: indigo;
-  color: #fff;
-  font-size: 40px;
+﻿
+html {
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+}
+td {
+  padding: 16px;
+}
+/*на заголоквки h1-h4 применить различные размеры шрифта с различными величинами (em, rem, px, %)*/
+h1 {
+  font-size: 190%;
+}
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 20px;
+}
+/*на заголоки h5-h6 применить значение font-size с помощью vw, vh (vmin, vmax)*/
+h5 {
+  font-size: 1.2vw;
+}
+h6 {
+  font-size: 8wh;
+}
+/*первая буква каждой ячейки должна быть красной (color: red;)*/
+td:first-letter {
+  color: red;
+}
+/*каждый четный ряд серый (background-color: #ddd;)*/
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+/*начиная с пятой и по последнюю ячейку в каждом ряду, применить курсив и жирный шрифт*/
+tr:nth-child(odd) td:nth-child(n + 5) {
+  font-style: italic;
+  font-weight: bold;
 }
