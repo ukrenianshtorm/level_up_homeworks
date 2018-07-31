@@ -37,35 +37,49 @@ footer {
 }
 
 /* Your styles go below */
-.wrapper *{
-  padding: 10px;
+* {
+  box-sizing: border-box;
 }
 h1 {
   font-size: 3rem;
+  padding: 10px;
 }
 h2 {
   font-size: 2rem;
+  padding: 10px;
+}
+.nav {
+  padding: 10px;
 }
 .table td {
-    border: 1px solid beige;
+  border: 1px solid beige;
+  padding: 10px;
 }
 .table img {
   max-width: 100%;
   height: auto;
-  border-radius: 10%;
 }
 .content p {
   text-align: justify;
   text-indent: 1.5em;
+  padding: 10px;
 }
 .nav-authorisation {
-  margin: -28px;
-  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.form {
+  padding: 10px;
+}
+.mybutton {
+  text-transform: uppercase;
 }
 .mybutton:hover {
   background: yellow;
-  border-radius: 50%;
+  text-transform: uppercase;
 }
 .footer {
   text-align: center;
+  padding: 10px;
 }
