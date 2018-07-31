@@ -52,6 +52,7 @@ h2 {
 .table img {
   max-width: 100%;
   height: auto;
+  border-radius: 10%;
 }
 .content p {
   text-align: justify;
@@ -63,6 +64,7 @@ h2 {
 }
 .mybutton:hover {
   background: yellow;
+  border-radius: 50%;
 }
 .footer {
   text-align: center;
