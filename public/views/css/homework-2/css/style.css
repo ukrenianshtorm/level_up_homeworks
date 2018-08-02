@@ -40,46 +40,80 @@ footer {
 * {
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 3rem;
+  font-weight: bold;
   padding: 10px;
 }
+
 h2 {
   font-size: 2rem;
+  font-weight: bold;
   padding: 10px;
 }
+
 .nav {
   padding: 10px;
 }
+
+.main {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+}
+
 .table td {
+  text-align: center;
   border: 1px solid beige;
   padding: 10px;
 }
+
 .table img {
-  max-width: 100%;
+  width: auto;
   height: auto;
 }
+
 .content p {
   text-align: justify;
-  text-indent: 1.5em;
+  text-indent:1.5em;
+  font-size: 1em;
   padding: 10px;
 }
+
 .nav-authorisation {
   position: absolute;
   right: 10px;
   top: 10px;
 }
+
 .form {
-  padding: 10px;
+  padding:20px;
 }
+
+.myemail{
+  border: 1px solid grey;
+  height: 35px;
+  padding:0 10px;
+  margin-left: 10px;
+}
+
 .mybutton {
   text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid grey;
+  height: 35px;
+  padding:0 10px;
+  margin-left: 20px;
 }
+
 .mybutton:hover {
-  background: yellow;
-  text-transform: uppercase;
+  border: 1px solid yellow;
 }
+
 .footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
