@@ -55,6 +55,7 @@ h2 {
 
 .nav {
   padding: 10px;
+  position: relative;
 }
 
 .main {
@@ -110,7 +111,7 @@ h2 {
 }
 
 .mybutton:hover {
-  border: 1px solid yellow;
+  border-color: yellow;
 }
 
 .footer {

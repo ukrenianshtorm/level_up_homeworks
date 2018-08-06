@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  color: #444;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* unknown props */
+/* пример фонового цвета - background-color: #3F51B5; */
+/* тень блока - box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); */
+/* закругленные углы у кнопок - border-radius: 3px; */
+
+/* Your styles go below */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #3F51B5;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding:0 20px;
+  line-height: 40px;
+  z-index: 1
+}
+
+.nav a {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.nav-active:enabled {
+  text-decoration: underline;
+}
+
+.content {
+  margin: auto;
+  padding: 60px 0 20px 0;
+  width: 1170px;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+p {
+  padding: 20px 0;
+}
+
+.card-ul {
+  font-size: 0;
+}
+
+.card-li {
+  display: inline-block;
+  width: 33.33%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card-foto {
+  position: relative;
+}
+
+.img-foto {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.content-page {
+  font-size: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.content-page a {
+  display: block;
+  background-color: #3F51B5;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 0;
+}
+
+.content-page a:hover {
+  background-color: #8e99d7;
+}
+
+.content-page a:active {
+  background-color: #1b224b;
+}
+
+
+.nav-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-page span {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.nav-page a:link {
+  text-decoration: underline;
+  padding: 0 10px;
+}
+
+.footer {
+  background-color: #3F51B5;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

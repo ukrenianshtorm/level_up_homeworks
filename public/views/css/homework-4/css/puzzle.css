@@ -1,0 +1,67 @@
+html {
+  font-size: 16px;
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-style: bold;
+  padding: 20px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pazzl {
+  width: 300px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.block1 {
+  background-color: #8E44AD;
+  width: 70px;
+  height: 70px;
+}
+
+.block2 {
+  background-color: #2ECC71;
+  width: 145px;
+  height: 70px;
+}
+
+.block3 {
+  background-color: #E74C3C;
+  width: 70px;
+  height: 145px;
+}
+
+.block4 {
+  background-color: #F1C40F;
+  width: 70px;
+  height: 70px;
+}
+
+.block5 {
+  background-color: #3498DB;
+  width: 70px;
+  height: 220px;
+}
+
+.block6 {
+  background-color: #3498DB;
+  width: 220px;
+  height: 70px;
+}
+
+.left {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+.right {
+  float: right;
+  margin: 0 5px 5px 0;
+}
