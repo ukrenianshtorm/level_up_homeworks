@@ -43,8 +43,9 @@ footer {
 
 body {
   background-image: url("../images/pattern.png");
-  height: 1170px;
-  padding: 15px;
+}
+
+.wrapper {
 }
 
 .header {
@@ -62,11 +63,19 @@ body {
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 10px;
   line-height: 40px;
 }
 
+.nav-link {
+  margin-right: 10px;
+}
+
 .nav-link:active {
+  border-bottom: 1px solid yellow;
+}
+
+
+.active {
   border-bottom: 1px solid yellow;
 }
 
@@ -93,11 +102,9 @@ body {
 }
 
 .intro {
-  position: relative;
   font-size: 50px;
   color: #fff;
   font-weight: bold;
-  top: 45%;
 }
 
 .page {
@@ -112,8 +119,9 @@ body {
 }
 
 .container {
-  padding: 0 15px;
-  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .row {
@@ -153,7 +161,7 @@ body {
 
 .cart-content {
   background-color: #fff;
-  padding: 0 15px;
+  padding: 15px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -169,6 +177,7 @@ body {
 
 .content-link {
   color: green;
+  margin-left: 10px;
 }
 
 .page-links {
@@ -182,16 +191,14 @@ body {
   color: #fff;
   padding: 10px;
   border-radius: 3px;
-  margin: -10px;
 }
 
 .footer {
   background-color: #000;
-  padding: 20px 45px;
 }
 
 .footer-li {
-  padding: 20px 0;
+  padding:10px 0;
 }
 
 .footer-link {
