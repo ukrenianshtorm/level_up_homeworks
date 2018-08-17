@@ -1,4 +1,6 @@
-*, :before, :after {
+*,
+ :before,
+ :after {
   box-sizing: border-box;
 }
 
@@ -23,16 +25,21 @@ body {
   flex: 1 0 auto;
 }
 
-footer, .footer {
+footer,
+.footer {
   flex-shrink: 0;
 }
+
 
 /* Unknown props */
 /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); - filter */
 /* transform: rotateZ(45deg); - checkbox */
 /* border-radius: 3px; - card rounding */
-
 /* Your styles go below */
+
+a {
+  text-decoration: none;
+}
 
 .clearfix:after {
   content: "";
@@ -46,6 +53,7 @@ footer, .footer {
   padding: 0 15px;
 }
 
+
 /*@media (min-width: 1024px) {
   .container {
     width: 980px;
@@ -56,10 +64,12 @@ footer, .footer {
     width: 1250px;
   }
 }*/
+
 .row {
   margin: 0 -15px;
   font-size: 0;
 }
+
 .column {
   display: inline-block;
   vertical-align: top;
@@ -67,42 +77,55 @@ footer, .footer {
   padding: 0 15px;
   font-size: 1rem;
 }
+
 .col-start-12 {
   width: 100%;
 }
+
 .col-start-11 {
   width: 91.666666%;
 }
+
 .col-start-10 {
   width: 83.333333%;
 }
+
 .col-start-9 {
   width: 75%;
 }
+
 .col-start-8 {
   width: 66.666666%;
 }
+
 .col-start-7 {
   width: 58.333333%;
 }
+
 .col-start-6 {
   width: 50%;
 }
+
 .col-start-5 {
   width: 41.666666%;
 }
+
 .col-start-4 {
   width: 33.33333%;
 }
+
 .col-start-3 {
   width: 25%;
 }
+
 .col-start-2 {
   width: 16.66666%;
 }
+
 .col-start-1 {
   width: 8.33333%;
 }
+
 @media (min-width: 544px) {
   .col-mb-1 {
     width: 8.3333%;
@@ -141,6 +164,7 @@ footer, .footer {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .col-sm-1 {
     width: 8.3333%;
@@ -179,6 +203,7 @@ footer, .footer {
     width: 100%;
   }
 }
+
 @media (min-width: 1024px) {
   .col-md-1 {
     width: 8.3333%;
@@ -217,6 +242,7 @@ footer, .footer {
     width: 100%;
   }
 }
+
 @media (min-width: 1280px) {
   .col-lg-1 {
     width: 8.3333%;
@@ -256,28 +282,38 @@ footer, .footer {
   }
 }
 
-.header, .footer {
-  height: 60px;
+.text {
   background-color: #5e6a83;
   color: #fff;
-  line-height: 60px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.header,
+.footer {
+  padding: 16px 0;
+}
+
+.header {
+  margin-bottom: 20px;
 }
 
 .filter {
   margin-bottom: 32px;
   padding: 16px;
-  background-color: #ddd;
   font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
 .filter__section {
   margin-bottom: 16px;
 }
+
 .filter__title {
   margin-bottom: 12px;
   font-size: 1.25rem;
 }
+
 .filter__checkbox {
   padding-bottom: 12px;
 }
@@ -293,6 +329,7 @@ footer, .footer {
   position: relative;
   cursor: pointer;
 }
+
 .checkbox:before {
   content: "";
   margin-top: -10px;
@@ -304,10 +341,15 @@ footer, .footer {
   top: 50%;
   left: 0;
 }
-input:checked + .checkbox:after {
+
+input:checked+.checkbox:before {
+  background-color: blue;
+}
+
+input:checked+.checkbox:after {
   content: "";
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   width: 6px;
   height: 10px;
   position: absolute;
@@ -354,18 +396,19 @@ input:checked + .checkbox:after {
 .card__image {
   height: 200px;
   background-image: url("../images/everest.jpg");
+  
 }
 
 .card__title {
   color: #fff;
   font-size: 20px;
-  padding-top: 50%;
+  padding-top: 148px;
   padding-left: 20px;
 }
 
 .card__content {
   padding: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
 
 .card__subparagraph {
