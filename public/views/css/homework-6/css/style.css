@@ -37,7 +37,7 @@ a {
 }
 
 .sprite {
-  background-image: url(https://s3-us-west-2.amazonaws.com/appdirect-assets/Blog%20Images/Content/2011/SVG-icons.png);
+  background-image: url(../images/icons.png);
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
@@ -57,8 +57,6 @@ a {
   background-position: 0px -148px;
 }
 
-
-
 .button {
   font-size: 12px;
   display: inline-block;
@@ -77,35 +75,34 @@ a {
   line-height: 30px;
 }
 
-.button--theme_green {
+.button--theme_approved {
   background-color: green;
 }
 
-.button--theme_red {
+.button--theme_pending {
   background-color: red;
 }
 
-.button--theme_orange {
+.button--theme_error {
   background-color: orange;
 }
 
 .list__item {
   border-bottom: 1px solid #EEC;
   padding: 10px;
+  min-height: 50px;
 }
 
-
-
-/*
 .list-item__sprite {
   float: left;
 }
 
 .list-item__paragraph {
+  padding: 10px;
+  max-width: 80%;
   float: left;
 }
 
-
 .list-item__buttom {
   float: right;
-}*/
+}
