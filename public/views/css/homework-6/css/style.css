@@ -32,17 +32,16 @@ a {
 }
 
 .page {
-  margin-top: 30px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 30px;
+  min-width: 300px;
 }
 
 .sprite {
+  display: inline-block;
   background-image: url(../images/icons.png);
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .sprite--pozition_1 {
@@ -70,9 +69,9 @@ a {
 
 .button--size_default {
   min-width: 30px;
-  height: 30px;
+  height: 36px;
   padding: 0 10px;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .button--theme_approved {
@@ -87,22 +86,34 @@ a {
   background-color: orange;
 }
 
+.list {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .list__item {
   border-bottom: 1px solid #EEC;
   padding: 10px;
-  min-height: 50px;
+}
+
+.list__item:last-child {
+  border-bottom: none;
 }
 
 .list-item__sprite {
   float: left;
 }
 
-.list-item__paragraph {
-  padding: 10px;
-  max-width: 80%;
-  float: left;
-}
-
 .list-item__buttom {
   float: right;
+}
+
+.list-item__paragraph {
+  padding: 10px;
+  text-align: justify;
+  margin-left: 45px;
+  margin-right: 80px;
+}
+
+.circle {
+  text-align: center;
 }
