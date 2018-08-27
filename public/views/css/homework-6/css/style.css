@@ -33,11 +33,11 @@ a {
 
 .page {
   padding: 30px;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .sprite {
-  display: inline-block;
+  /*display: inline-block;*/
   background-image: url(../images/icons.png);
   background-repeat: no-repeat;
   height: 36px;
@@ -87,7 +87,7 @@ a {
 }
 
 .list {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24), -1px -1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .list__item {
@@ -114,6 +114,52 @@ a {
   margin-right: 80px;
 }
 
+.circle-container {
+  margin: 0 auto;
+  padding: 40px;
+  height: 300px;
+  width: 300px;
+}
+
 .circle {
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-image: radial-gradient(green, #2e520c, red);
+  background-size: 5px 5px;
+  background-repeat: repeat;
+  box-shadow: inset -2px 20px 5px rgba(26, 182, 28, 0.80), inset -21px 0px 5px rgba(168, 28, 181, 0.80), inset 0px -18px 5px rgba(64, 77, 219, 0.80), inset 22px -2px 5px rgba(64, 235, 144, 0.80), inset 17px 22px 5px rgba(196, 219, 64, 0.80), inset -16px -23px 5px rgba(224, 167, 64, 0.80);
+}
+
+.cssAnimation {
+  -webkit-animation: cssAnimation 5s 3 linear;
+  -moz-animation: cssAnimation 5s 3 linear;
+  -o-animation: cssAnimation 5s 3 linear;
+}
+
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
+  }
+}
+
+@-moz-keyframes cssAnimation {
+  from {
+    -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
+  }
+  to {
+    -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
+  }
+}
+
+@-o-keyframes cssAnimation {
+  from {
+    -o-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
+  }
+  to {
+    -o-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
+  }
 }

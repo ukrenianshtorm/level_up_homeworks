@@ -30,8 +30,6 @@ footer,
   flex-shrink: 0;
 }
 
-
-
 /* Unknown props */
 /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); - filter */
 /* transform: rotateZ(45deg); - checkbox */
@@ -48,22 +46,20 @@ a {
   clear: both;
 }
 
+.content {
+  padding: 20px 0;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
   padding: 0 15px;
+  min-width: 320px;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 100%;
+    width: 1200px;
   }
 }
 
@@ -78,54 +74,6 @@ a {
   width: 100%;
   padding: 0 15px;
   font-size: 1rem;
-}
-
-.col-start-12 {
-  width: 100%;
-}
-
-.col-start-11 {
-  width: 91.666666%;
-}
-
-.col-start-10 {
-  width: 83.333333%;
-}
-
-.col-start-9 {
-  width: 75%;
-}
-
-.col-start-8 {
-  width: 66.666666%;
-}
-
-.col-start-7 {
-  width: 58.333333%;
-}
-
-.col-start-6 {
-  width: 50%;
-}
-
-.col-start-5 {
-  width: 41.666666%;
-}
-
-.col-start-4 {
-  width: 33.33333%;
-}
-
-.col-start-3 {
-  width: 25%;
-}
-
-.col-start-2 {
-  width: 16.66666%;
-}
-
-.col-start-1 {
-  width: 8.33333%;
 }
 
 @media (min-width: 544px) {
@@ -284,32 +232,25 @@ a {
   }
 }
 
-.text {
+.header,
+.footer {
+  padding: 16px 0;
   background-color: #5e6a83;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 
-.header,
-.footer {
-  padding: 16px 0;
-}
-
 .filter {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   padding: 16px;
   font-size: 1rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.filter__section {
-  margin-bottom: 16px;
-}
-
 .filter__title {
-  margin-bottom: 12px;
   font-size: 1.25rem;
+  padding-bottom: 10px;
 }
 
 .filter__checkbox {
@@ -390,29 +331,31 @@ input:checked + .checkbox:after {
 
 .card__inner {
   background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0 0 5px 5px;
 }
 
 .card__image {
   position: relative;
   height: 200px;
   background-image: url("../images/everest.jpg");
+  border-radius: 5px 5px 0 0;
 }
 
 .card__title {
   position: absolute;
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   top: 160px;
   left: 30px;
 }
 
 .card__content {
   padding: 15px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
 
 .card__sub-title {
-  color: #DCDCDC;
+  color: #CCCCCC;
   font-size: 18px;
   padding: 10px 0;
 }
