@@ -1,4 +1,4 @@
-*,
+state
  :before,
  :after {
   box-sizing: border-box;
@@ -45,20 +45,20 @@ a {
 }
 
 .sprite--pozition_1 {
-  background-position: -109px -38px;
+  background-position: -112px -39px;
 }
 
 .sprite--pozition_2 {
-  background-position: -109px -76px;
+  background-position: -112px -76px;
 }
 
 .sprite--pozition_3 {
-  background-position: 0px -148px;
+  background-position: 0px -150px;
 }
 
-.button {
+.state {
   font-size: 12px;
-  display: inline-block;
+ /* display: inline-block;*/
   vertical-align: top;
   color: #fff;
   outline: 0;
@@ -67,27 +67,28 @@ a {
   text-align: center;
 }
 
-.button--size_default {
+.state--size_default {
   min-width: 30px;
   height: 36px;
   padding: 0 10px;
   line-height: 36px;
 }
 
-.button--theme_approved {
+.state--theme_approved {
   background-color: green;
 }
 
-.button--theme_pending {
+.state--theme_pending {
   background-color: red;
 }
 
-.button--theme_error {
+.state--theme_error {
   background-color: orange;
 }
 
 .list {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24), -1px -1px 3px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
 }
 
 .list__item {
@@ -100,66 +101,26 @@ a {
 }
 
 .list-item__sprite {
+  display: table-cell;
   float: left;
 }
 
-.list-item__buttom {
+.list-item__state {
   float: right;
 }
 
 .list-item__paragraph {
+  display: table-cell;
   padding: 10px;
   text-align: justify;
-  margin-left: 45px;
-  margin-right: 80px;
-}
-
-.circle-container {
-  margin: 0 auto;
-  padding: 40px;
-  height: 300px;
-  width: 300px;
 }
 
 .circle {
-  height: 100%;
-  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   background-image: radial-gradient(green, #2e520c, red);
   background-size: 5px 5px;
-  background-repeat: repeat;
   box-shadow: inset -2px 20px 5px rgba(26, 182, 28, 0.80), inset -21px 0px 5px rgba(168, 28, 181, 0.80), inset 0px -18px 5px rgba(64, 77, 219, 0.80), inset 22px -2px 5px rgba(64, 235, 144, 0.80), inset 17px 22px 5px rgba(196, 219, 64, 0.80), inset -16px -23px 5px rgba(224, 167, 64, 0.80);
-}
-
-.cssAnimation {
-  -webkit-animation: cssAnimation 5s 3 linear;
-  -moz-animation: cssAnimation 5s 3 linear;
-  -o-animation: cssAnimation 5s 3 linear;
-}
-
-@-webkit-keyframes cssAnimation {
-  from {
-    -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
-  }
-  to {
-    -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
-  }
-}
-
-@-moz-keyframes cssAnimation {
-  from {
-    -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
-  }
-  to {
-    -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
-  }
-}
-
-@-o-keyframes cssAnimation {
-  from {
-    -o-transform: rotate(4deg) scale(1) skew(1deg) translate(40px);
-  }
-  to {
-    -o-transform: rotate(360deg) scale(1) skew(1deg) translate(40px);
-  }
 }

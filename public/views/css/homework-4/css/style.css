@@ -56,12 +56,6 @@ body {
   padding: 0px 15px;
 }
 
-.container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .header {
   background-color: #228B22;
   color: #fff;
@@ -96,7 +90,6 @@ body {
 }
 
 .nav-authorisation {
-  padding: 0 15px;
   float: right;
   text-align: right;
 }
