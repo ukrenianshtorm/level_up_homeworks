@@ -1,4 +1,4 @@
-state
+*,
  :before,
  :after {
   box-sizing: border-box;
@@ -15,10 +15,6 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 .clearfix:after {
   content: "";
   display: block;
@@ -31,13 +27,12 @@ a {
   padding: 0 15px;
 }
 
-.page {
-  padding: 30px;
+.main {
+  padding: 100px 50px;
   min-width: 320px;
 }
 
 .sprite {
-  /*display: inline-block;*/
   background-image: url(../images/icons.png);
   background-repeat: no-repeat;
   height: 36px;
@@ -58,7 +53,7 @@ a {
 
 .state {
   font-size: 12px;
- /* display: inline-block;*/
+  display: inline-block;
   vertical-align: top;
   color: #fff;
   outline: 0;
@@ -86,13 +81,66 @@ a {
   background-color: orange;
 }
 
+/*Новый способ через таблицу*/
+
+.info-list {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24), -1px -1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.info-list__item {
+  border-bottom: 0.5px solid grey;
+}
+
+.info-list__item:last-child {
+  border-bottom: none;
+}
+
+.info-list__item-table {
+  display: table;
+  padding: 10px;
+}
+
+.info-list__item-table-row {
+  display: table-row;
+}
+
+.info-list__item-table-cell-sprite {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.info-list__item-table-cell-p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: justify;
+  padding: 10px;
+}
+
+.info-list__item-state {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+
+.circle {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-image: radial-gradient(green, #2e520c, red);
+  background-size: 5px 5px;
+  box-shadow: inset -2px 20px 5px rgba(26, 182, 28, 0.80), inset -21px 0px 5px rgba(168, 28, 181, 0.80), inset 0px -18px 5px rgba(64, 77, 219, 0.80), inset 22px -2px 5px rgba(64, 235, 144, 0.80), inset 17px 22px 5px rgba(196, 219, 64, 0.80), inset -16px -23px 5px rgba(224, 167, 64, 0.80);
+}
+
+/*Старый способ*/
+
 .list {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24), -1px -1px 3px rgba(0, 0, 0, 0.12);
-  margin-bottom: 30px;
 }
 
 .list__item {
-  border-bottom: 1px solid #EEC;
+  border-bottom: 0.5px solid grey;
   padding: 10px;
 }
 
@@ -101,7 +149,6 @@ a {
 }
 
 .list-item__sprite {
-  display: table-cell;
   float: left;
 }
 
@@ -113,14 +160,3 @@ a {
   display: table-cell;
   padding: 10px;
   text-align: justify;
-}
-
-.circle {
-  margin: 0 auto;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background-image: radial-gradient(green, #2e520c, red);
-  background-size: 5px 5px;
-  box-shadow: inset -2px 20px 5px rgba(26, 182, 28, 0.80), inset -21px 0px 5px rgba(168, 28, 181, 0.80), inset 0px -18px 5px rgba(64, 77, 219, 0.80), inset 22px -2px 5px rgba(64, 235, 144, 0.80), inset 17px 22px 5px rgba(196, 219, 64, 0.80), inset -16px -23px 5px rgba(224, 167, 64, 0.80);
-}
