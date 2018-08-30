@@ -88,7 +88,7 @@ body {
 }
 
 .info-list__item {
-  border-bottom: 0.5px solid grey;
+  border-bottom: 0.5px solid rgba(186, 167, 186, 0.84);
 }
 
 .info-list__item:last-child {
@@ -140,7 +140,7 @@ body {
 }
 
 .list__item {
-  border-bottom: 0.5px solid grey;
+  border-bottom: 0.5px solid rgba(186, 167, 186, 0.84);
   padding: 10px;
 }
 
