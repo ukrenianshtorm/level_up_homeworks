@@ -100,9 +100,9 @@ body {
   padding: 10px;
 }
 
-.info-list__item-table-row {
+/*.info-list__item-table-row {
   display: table-row;
-}
+}*/
 
 .info-list__item-table-cell-sprite {
   display: table-cell;
