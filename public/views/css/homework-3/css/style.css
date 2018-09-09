@@ -29,9 +29,9 @@ footer {
 }
 
 /* unknown props */
-/* пример фонового цвета - background-color: #3F51B5; */
-/* тень блока - box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); */
-/* закругленные углы у кнопок - border-radius: 3px; */
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - background-color: #3F51B5; */
+/* пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - border-radius: 3px; */
 
 /* Your styles go below */
 * {
@@ -60,8 +60,8 @@ footer {
 }
 
 .content {
-  margin: auto;
-  padding: 60px 0 20px 0;
+  margin:0 auto;
+  padding: 20px;
   width: 1170px;
 }
 
