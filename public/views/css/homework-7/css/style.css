@@ -1,4 +1,6 @@
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
 }
 
@@ -46,8 +48,9 @@ img {
   height: 1em;
   overflow: hidden;
   animation: timing 10s infinite step-end;
-  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
+
 .preloader {
   display: inline-block;
   width: 200px;
@@ -55,6 +58,7 @@ img {
   line-height: 100px;
   position: relative;
 }
+
 .preloader__inner {
   border-radius: 50%;
   background-image: radial-gradient(#7F7F7F, #494949);
@@ -62,6 +66,7 @@ img {
   height: 100%;
   position: relative;
 }
+
 .preloader__half {
   width: 50%;
   height: 100%;
@@ -69,12 +74,15 @@ img {
   position: absolute;
   top: 0;
 }
+
 .preloader__half--left {
   left: 0;
 }
+
 .preloader__half--right {
   right: 0;
 }
+
 .preloader__circle {
   border-radius: 50%;
   border: 30px solid green;
@@ -83,18 +91,21 @@ img {
   position: absolute;
   top: 0;
 }
+
 .preloader__circle--left {
   border-right-color: transparent;
   border-bottom-color: transparent;
   left: 0;
   animation: rotate-left 10s linear infinite;
 }
+
 .preloader__circle--right {
   border-left-color: transparent;
   border-bottom-color: transparent;
   right: 0;
   animation: rotate-right 10s linear infinite;
 }
+
 .preloader__gap {
   margin-left: -2px;
   border-bottom: 30px solid #5E5E5E;
@@ -105,48 +116,50 @@ img {
   left: 50%;
   animation: rotate 10s linear infinite;
 }
+
 @keyframes rotate {
-  0%{
-  z-index: 2;
+  0% {
+    z-index: 2;
   }
-  60%{
-  z-index: -1;
+  60% {
+    z-index: -1;
   }
-  100%{
-  z-index: -1;
+  100% {
+    z-index: -1;
   }
 }
 
 @keyframes timing {
-  10%{
-   text-indent: -.5em;
-   }
-  20%{
-   text-indent: -1em;
-   }
-  30%{
-   text-indent: -1.5em;
-   }
-  40%{
-   text-indent: -2em;
-   }
-  50%{
-   text-indent: -2.5em;
-   }
-  60%{
-   text-indent: -3em;
-   }
-  70%{
-   text-indent: -3.5em;
-   }
-  80%{
-   text-indent: -4em;
-   }
-  90%{
-   text-indent: -4.5em;
-   width: 1em;
-   }
+  10% {
+    text-indent: -.5em;
+  }
+  20% {
+    text-indent: -1em;
+  }
+  30% {
+    text-indent: -1.5em;
+  }
+  40% {
+    text-indent: -2em;
+  }
+  50% {
+    text-indent: -2.5em;
+  }
+  60% {
+    text-indent: -3em;
+  }
+  70% {
+    text-indent: -3.5em;
+  }
+  80% {
+    text-indent: -4em;
+  }
+  90% {
+    text-indent: -4.5em;
+    width: 1em;
+  }
 }
+
 @keyframes rotate-right {
   0% {
     transform: rotateZ(-135deg);
@@ -170,6 +183,7 @@ img {
     transform: rotateZ(45deg);
   }
 }
+
 @keyframes rotate-left {
   0% {
     transform: rotateZ(135deg);
@@ -193,4 +207,3 @@ img {
     transform: rotateZ(315deg);
   }
 }
-
