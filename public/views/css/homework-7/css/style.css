@@ -35,18 +35,15 @@ img {
 }
 
 .preloader:before {
-  content: "12345678910";
+  content: "1";
   position: absolute;
+  font-size: 80px;
   z-index: 1;
-  font: bold 5em/1 Times;
   top: 50%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
   display: inline-block;
-  width: 0.5em;
-  height: 1em;
-  overflow: hidden;
   animation: timing 10s infinite step-end;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
@@ -75,6 +72,7 @@ img {
   top: 0;
 }
 
+
 .preloader__half--left {
   left: 0;
 }
@@ -93,15 +91,15 @@ img {
 }
 
 .preloader__circle--left {
-  border-right-color: transparent;
-  border-bottom-color: transparent;
+  border-right-color: #5E5E5E;
+  border-bottom-color: #5E5E5E;
   left: 0;
   animation: rotate-left 10s linear infinite;
 }
 
 .preloader__circle--right {
-  border-left-color: transparent;
-  border-bottom-color: transparent;
+  border-left-color: #5E5E5E;
+  border-bottom-color: #5E5E5E;
   right: 0;
   animation: rotate-right 10s linear infinite;
 }
@@ -131,50 +129,37 @@ img {
 
 @keyframes timing {
   10% {
-    text-indent: -.5em;
+    content: "2";
   }
   20% {
-    text-indent: -1em;
+    content: "3";
   }
   30% {
-    text-indent: -1.5em;
+    content: "4";
   }
   40% {
-    text-indent: -2em;
+    content: "5";
   }
   50% {
-    text-indent: -2.5em;
+    content: "6";
   }
   60% {
-    text-indent: -3em;
+    content: "7";
   }
   70% {
-    text-indent: -3.5em;
+    content: "8";
   }
   80% {
-    text-indent: -4em;
+    content: "9";
   }
   90% {
-    text-indent: -4.5em;
-    width: 1em;
+    content: "10";
   }
 }
 
 @keyframes rotate-right {
   0% {
     transform: rotateZ(-135deg);
-  }
-  10% {
-    transform: rotateZ(-99deg);
-  }
-  20% {
-    transform: rotateZ(-63deg);
-  }
-  30% {
-    transform: rotateZ(-27deg);
-  }
-  40% {
-    transform: rotateZ(9deg);
   }
   50% {
     transform: rotateZ(45deg);
@@ -190,18 +175,6 @@ img {
   }
   50% {
     transform: rotateZ(135deg);
-  }
-  60% {
-    transform: rotateZ(171deg);
-  }
-  70% {
-    transform: rotateZ(207deg);
-  }
-  80% {
-    transform: rotateZ(243deg);
-  }
-  90% {
-    transform: rotateZ(279deg);
   }
   100% {
     transform: rotateZ(315deg);
