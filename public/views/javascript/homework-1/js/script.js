@@ -13,4 +13,4 @@ var userName = 'Петя';
 var framesPerSecond;
 var connectingSignBetweenWords;
 var documentView;
-var lastPageNavigationOn;
+var onlastPageNavigation;
