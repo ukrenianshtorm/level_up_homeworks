@@ -12,6 +12,6 @@ console.log(typeof name);
 var ourPlanetName = 'Земля';
 var userName = 'Петя';
 var fps; // framesPerSecond
-var space;
+var connectingSign;
 var documentView;
-var lastPage;
+var showLastPage;
