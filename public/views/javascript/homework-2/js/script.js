@@ -39,7 +39,7 @@ var c = (b += 5) - a++ * b - 3 + (b -= 3 + 1 - --a);
 alert(correctAnswer);
 
 if (correctAnswer == false) alert('This is a big ass!')
-else alert('Gooood :)');
+else alert('Good :)');
 
 console.log(a);
 console.log(b);
