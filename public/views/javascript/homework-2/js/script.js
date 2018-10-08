@@ -38,6 +38,9 @@ var c = (b += 5) - a++ * b - 3 + (b -= 3 + 1 - --a);
 // c = 9 - 18 - 3 + 7 = ` + c + ';');
 alert(correctAnswer);
 
+if (correctAnswer == false) alert('This is a big ass!')
+else alert('Gooood :)');
+
 console.log(a);
 console.log(b);
 console.log(typeof c);
