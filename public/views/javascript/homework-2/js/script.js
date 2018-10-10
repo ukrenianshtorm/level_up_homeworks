@@ -27,14 +27,14 @@ var b = 4;
 var c = (b += 5) - a++ * b - 3 + (b -= 3 + 1 - --a);
 // (b += 5) or b = b + 5 or b = 9;
 // a++ * b or 2 * 9 or 18, ++ ignored a = 2;
-//(b -= 3 + 1 - --a) or b = b + (- 3 -1 + 2) or b = 9 + (- 3 -1 + 2) or b = 7 ; --a ok a++ ok; magic a = 2)))
+//(b -= 3 + 1 - --a) or b = b - (3 + 1 - 2) or b = 9 - (3 + 1 - 2) or b = 7 ; --a ok a++ ok; magic a = 2)))
 // c = 9 - 18 - 3 + 7 = -5;
 
 var correctAnswer = confirm(`Correct answer ?
 var c = (b += 5) - a++ * b - 3 + (b -= 3 + 1 - --a);
 // (b += 5) or b = b + 5 or b = 9;
 // a++ * b or 2 * 9 or 18, ++ ignored a = 2;
-//(b -= 3 + 1 - --a) or b = b + (- 3 -1 + 2) or b = 9 + (- 3 -1 + 2) or b = 7 ; --a ok a++ ok; magic a = 2)))
+//(b -= 3 + 1 - --a) or b = b = b - (3 + 1 - 2) or b = 9 - (3 + 1 - 2) or b = 7 ; --a ok a++ ok; magic a = 2)))
 // c = 9 - 18 - 3 + 7 = ` + c + ';');
 alert(correctAnswer);
 
