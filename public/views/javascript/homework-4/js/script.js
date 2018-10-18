@@ -220,12 +220,12 @@ function pow(x, n) {
 
 function calcPow() {
   for (; ;) {
-    let calcPow;
+    // let calcPow;
     let x = +prompt('Введите число x:', 1);
     let n = +prompt('В какую степень возвести n:', 1);
 
     if (true && x > 0 && n > 0) {
-      return calcPow =  alert('Число ' + x + ' в степени ' + n + ' = ' + pow(x, n));
+      return alert('Число ' + x + ' в степени ' + n + ' = ' + pow(x, n));
     } else {
       alert('Число должно быть положительным и не строкой!');
     } 
