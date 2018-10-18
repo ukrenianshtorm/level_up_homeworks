@@ -223,7 +223,7 @@ function calcPow() {
     let x = +prompt('Введите число x:', 1);
     let n = +prompt('В какую степень возвести n:', 1);
     if (true && x > 0 && n > 0) {
-      return pow(x, n)
+      return pow(x, n);
     } else {
       alert('Число должно быть положительным и не строкой!');
     } 
