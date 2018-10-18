@@ -220,7 +220,6 @@ function pow(x, n) {
 
 function calcPow() {
   for (; ;) {
-    // let calcPow;
     let x = +prompt('Введите число x:', 1);
     let n = +prompt('В какую степень возвести n:', 1);
 
