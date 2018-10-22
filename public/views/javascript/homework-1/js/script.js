@@ -13,5 +13,5 @@ var ourPlanetName = 'Земля';
 var userName = 'Петя';
 var fps; // framesPerSecond
 var connectingSign;
-var documentView;
+var documentViewMode;
 var showLastPage;

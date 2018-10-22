@@ -4,11 +4,11 @@
 // alert('Your name - ' + userName);
 // // --------------------------
 // if ("0") {
-//   alert('Привет');   // yes  message because "0" == true
+//   alert('Привет');   // "0" CONVERTS TO true BECAUSE IT'S NOT A FALSY VALUE
 // }
 // //---------------------------
 // var company = prompt('Каково «официальное» название JavaScript?', '');
-// if (company == 'ECMAScript') {
+// if (company === 'ECMAScript') {
 //   alert('Верно!');
 // } else {
 //   alert('Не знаете? «ECMAScript»!');
@@ -19,98 +19,103 @@
 //   alert(1);
 // } else if (a < 0) {
 //   alert(-1);
-// } else if  (a == 0) {
+// } else if  (a === 0) {
 //   alert(0);
-// }
-//   else {
+// } else {
 //   alert('The error you entered is not a number');
 // }
 // //-------------------------------
 // let login = prompt('Your login please: ', '')
 
-// if (login == "Админ") {
+// if (login === "Админ") {
 //   let password = prompt('Your password please: ', '')
-//   if (password == 'Чёрный Властелин') {
+//   if (password === 'Чёрный Властелин') {
 //     alert('Добро пожаловать!');
-//   } else if (password == null) {
+//   } else if (password === null) {
 //     alert('Вход отменен');
 //   } else {
 //     alert('Пароль не верен');
 //   }
-// } else if (login == null) {
+// } else if (login === null) {
 //   alert('Вход отменен');
 // } else {
 //   alert('Я вас не знаю');
 // }
 // //-----------------------------------
-// let a = 3, b = -1;
+// let a = 3;
+// let b = -1;
 
 // let result = (a + b < 4)? 'few' : 'many';
 // console.log(result); 
 // //--------------------------------------
 // let login = '';
 
-// let message =  (login == 'Вася') ? 'Привет' : 
-//   (login == 'Директор') ? 'Здравствуйте' :
-//   (login == '') ? 'Нет логина': '';
+// let message =  (login === 'Вася') ? 'Привет' : 
+//   (login === 'Директор') ? 'Здравствуйте' :
+//   (login === '') ? 'Нет логина': '';
 // console.log(message); 
 //------------------------------------------
-// console.log(null || 2 || undefined); // 2
+// console.log(null || 2 || undefined); // || stumbles on the "truth" and returns the value 2
 //------------------------------------------
-// alert(alert(1) || 2 || alert(3)); // 1, 2 
+// alert(alert(1) || 2 || alert(3)); //alert(1) returns the 1 IT'S true, output on display 1; alert(alert(1) || 2 || alert(3)) stumbles on the "truth" and returns the  2, output on display 2
 //------------------------------------------
-// alert(alert(1) && alert(2)); // 1, undefined
+// alert(alert(1) && alert(2)); alert(1) returns the 1 IT'S true, output on display 1; alert(alert(1) && alert(2)) returns undefined output on display , because that expression alert(1) and alert(2) undefined
 //------------------------------------------
-// alert(null || 2 && 3 || 4); // 3
+// alert(null || 2 && 3 || 4); // return 3 because that expression null || 2 false, and that expression 3 || 4 stumbles on the "truth" and return 3
 //------------------------------------------
 //between 14 and 90
 // let age = 34;
 
-// if ((age > 13) && (age < 89)) {
-//   console.log('between 14 and 90');
+// if ((age >= 14) && (age <= 90)) {
+//   console.log('age between 14 and 90');
 // } else {
 //   console.log(false);
 // }
 //------------------------------------------
 //not between 14 and 90
-// let age = 90;
+// let age = 12;
 
-// if (age > 13 && age < 89) {
-//   console.log(true);
+// if (age < 14 || age > 90) {
+//   console.log('age not between 14 and 90');
 // } else {
-//   console.log('not between 14 and 90'); //ok
+//   console.log(false);
 // }
 // //not between 14 and 90
-// let age = 90;
+// let age = 13;
 
-// if (!(age > 13 && age < 89)) {
+// if (!(age >= 14 && age <= 90)) {
 //   console.log('not between 14 and 90');
 // } else {
 //   console.log(false); 
 // }
-// if (-1 || 0) alert('первое'); //true
-// if (-1 && 0) alert('второе'); //false
-// if (null || -1 && 1) alert('третье'); //true
+// if (-1 || 0) alert('первое'); // ||stumbles on the "truth" and returns the value -1
+// if (-1 && 0) alert('второе'); //&& stumbles on a "lie" and returns the false
+// if (null || -1 && 1) alert('третье'); //&& stumbles on a "lie" and returns the value -1, and ||stumbles on the "truth" and returns the value -1
 // --------------------------------------
-// "" + 1 + 0  // '10'
-// "" - 1 + 0  // -1
-// true + false  // 1
-// 6 / "3" = 3
-// "2" * "3" = 6
-// 4 + 5 + "px" // 9px
-// "$" + 4 + 5 // $45
-// "4" - 2 // 2
-// "4px" - 2 // Nan
-// 7 / 0 // infinity
-// "  -9\n" + 5 // ' -9\n+5'
-// "  -9\n" - 5// -14
-// 5 && 2 // true \ 2
-// 2 && 5 // true \ 5
+// "" + 1 + 0  // '10' when added with a string will be a string
+let c = "";
+let b = null == "\n0\n";
 
-// 5 || 0 // true \ 5
+console.log('b :', b);
+console.log(typeof b);
+// "" - 1 + 0  // -1 приводим к числу 
+// true + false  // + приводит к числу 1 + 0 = 1
+// 6 / "3"  // оператор деления приводит к числу 6 / 3 = 2
+// "2" * "3" // умножение приводит к числу 2 * 3 = 6
+// 4 + 5 + "px" // 9px  when added with a string will be a string
+// "$" + 4 + 5 // $45  when added with a string will be a string
+// "4" - 2 // приводим к числу 4 - 2 = 2
+// "4px" - 2 // приводим к числу - 4px не получается, строка минус число будет NAN 
+// 7 / 0 // infinity - число всегда при делении на ноль -infinity
+// "  -9\n" + 5 //when added with a string will be a string
+// "  -9\n" - 5// -14  // приводим к числу пробелы игнорируются -9 - 5 = -14  
+// 5 && 2 // true \ && Запинается на лжы 5 правда 2 правда возвращает второе т.е. 2
+// 2 && 5 // true \ && Запинается на лжы 2 правда 5 правда возвращает второе т.е. 5
 
-// 0 || 5 // true \ 5
-// null + 1  // 1
-// undefined + 1 //NAN
-// null == "\n0\n" // false
-// +null == +"\n0\n" //true
+// 5 || 0 // Запинается на правде 5 правда вернет 5
+
+// 0 || 5 // Запинается на правде  0 ложь 5 правда вернет 5
+// null + 1  // приводим к числу 0 + 1 = 1
+// undefined + 1 //неопределенно с оператором  всегда NaN
+// null == "\n0\n" // сравниваем null со строкой "\n0\n" ложь
+// +null == +"\n0\n" //приводим к числу 0 === 0 правда
