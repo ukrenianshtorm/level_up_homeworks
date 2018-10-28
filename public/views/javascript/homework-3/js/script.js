@@ -57,14 +57,14 @@
 //------------------------------------------
 // console.log(null || 2 || undefined); // || stumbles on the "truth" and returns the value 2
 //------------------------------------------
-// alert(alert(1) || 2 || alert(3)); //alert(1) returns the 1 IT'S true, output on display 1; alert(alert(1) || 2 || alert(3)) stumbles on the "truth" and returns the  2, output on display 2
+// alert(alert(1) || 2 || alert(3)); //FIRST ALERT WILL SHOW "1" AND RETURN UNDEFINED AND IT'S NOT TRUE. THEN 2 IS TRUE AND IT'S DISPLAYED
 //------------------------------------------
-// alert(alert(1) && alert(2)); alert(1) returns the 1 IT'S true, output on display 1; alert(alert(1) && alert(2)) returns undefined output on display , because that expression alert(1) and alert(2) undefined
+// alert(alert(1) && alert(2)); FIRST ALERT WILL SHOW "1" AND RETURNS UNDEFINED. AND && STOPS AFTER alert(1)
 //------------------------------------------
-// alert(null || 2 && 3 || 4); // return 3 because that expression null || 2 false, and that expression 3 || 4 stumbles on the "truth" and return 3
+// alert(null || 2 && 3 || 4); // SHOW 3 because that expression null || 2 false, and that expression 3 || 4 stumbles on the "truth" and return 3 , false && 3 return 3 and alert show him
 //------------------------------------------
 //between 14 and 90
-// let age = 34;
+// let age = 34;s
 
 // if ((age >= 14) && (age <= 90)) {
 //   console.log('age between 14 and 90');
@@ -90,7 +90,7 @@
 // }
 // if (-1 || 0) alert('первое'); // ||stumbles on the "truth" and returns the value -1
 // if (-1 && 0) alert('второе'); //&& stumbles on a "lie" and returns the false
-// if (null || -1 && 1) alert('третье'); //&& stumbles on a "lie" and returns the value -1, and ||stumbles on the "truth" and returns the value -1
+// if (null || -1 && 1) alert('третье'); //&& OPERATOR HAS HIGHER PRIORITY THAN ||. SO -1 && 1 -> 1 AND NULL || 1 -> 1
 // --------------------------------------
 // "" + 1 + 0  // '10' when added with a string will be a string
 let c = "";
@@ -107,7 +107,7 @@ console.log(typeof b);
 // "4" - 2 // приводим к числу 4 - 2 = 2
 // "4px" - 2 // приводим к числу - 4px не получается, строка минус число будет NAN 
 // 7 / 0 // infinity - число всегда при делении на ноль -infinity
-// "  -9\n" + 5 //when added with a string will be a string
+// "  -9\n" + 5 // swhen added with a string will be a string
 // "  -9\n" - 5// -14  // приводим к числу пробелы игнорируются -9 - 5 = -14  
 // 5 && 2 // true \ && Запинается на лжы 5 правда 2 правда возвращает второе т.е. 2
 // 2 && 5 // true \ && Запинается на лжы 2 правда 5 правда возвращает второе т.е. 5
@@ -116,6 +116,6 @@ console.log(typeof b);
 
 // 0 || 5 // Запинается на правде  0 ложь 5 правда вернет 5
 // null + 1  // приводим к числу 0 + 1 = 1
-// undefined + 1 //неопределенно с оператором  всегда NaN
+// undefined + 1 // неопределенно с оператором  всегда NaN
 // null == "\n0\n" // сравниваем null со строкой "\n0\n" ложь
-// +null == +"\n0\n" //приводим к числу 0 === 0 правда
+// +null == +"\n0\n" // приводим к числу 0 === 0 правда
