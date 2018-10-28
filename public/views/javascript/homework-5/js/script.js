@@ -46,10 +46,11 @@
 
 // function fib(n) {
 //   let a = 1;
-//   let b = 1;
+//   let b = 0;
+//   let c;
 
-//   for (let i = 3; i <= n; i += 1) {
-//     let c = a + b;
+//   for (let i = 0; i < n; i += 1) {
+//     c = a + b;
 //     a = b;
 //     b = c;
 //   }
