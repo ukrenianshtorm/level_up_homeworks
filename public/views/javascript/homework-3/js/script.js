@@ -93,11 +93,11 @@
 // if (null || -1 && 1) alert('третье'); //&& OPERATOR HAS HIGHER PRIORITY THAN ||. SO -1 && 1 -> 1 AND NULL || 1 -> 1
 // --------------------------------------
 // "" + 1 + 0  // '10' when added with a string will be a string
-let c = "";
-let b = null == "\n0\n";
+// let c = "";
+// let b = null == "\n0\n";
 
-console.log('b :', b);
-console.log(typeof b);
+// console.log('b :', b);
+// console.log(typeof b);
 // "" - 1 + 0  // -1 приводим к числу 
 // true + false  // + приводит к числу 1 + 0 = 1
 // 6 / "3"  // оператор деления приводит к числу 6 / 3 = 2

@@ -1,0 +1,12 @@
+{
+  "indent_with_tabs": false,
+  "indent_size": 2,
+  "preserve_newlines": true,
+  "keep_array_indentation": true,
+  "break_chained_methods": true,
+  "extra_liners": "",
+"wrap_line_length": 120,
+"end_with_newline": true,
+"space_after_named_function": true,
+"space_after_anon_function": true
+}
