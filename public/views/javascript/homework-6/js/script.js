@@ -1,17 +1,16 @@
 'use strict';
 //-----------------------------------------------
 // Интерфейс суммы
-
-// showSumNumber();
-
 // function showSumNumber () {
 //   let a = +prompt('Input number a: ', 1);
 //   let b = +prompt('Input number b: ', 1);
 
 //   let result = a + b;
 
-//   return alert('Sum : ' + a + ' + ' + b + ' = ' + result.toFixed(2));
+//   alert('Sum : ' + a + ' + ' + b + ' = ' + result.toFixed(2));
 // }
+
+// showSumNumber();
 //-----------------------------------------------
 // Почему 6.35.toFixed(1) == 6.3 ?
 
@@ -34,7 +33,7 @@
 // function fibBinet (n) {
 //   let y = (1 + Math.sqrt(5)) / 2;
 
-//   return Math.ceil(Math.pow(y, n) / Math.sqrt(5));
+//   return Math.round(Math.pow(y, n) / Math.sqrt(5));
 // }
 // console.log(fibBinet(77));
 // Результаты разные потому что при округлении бесконечных дробей будут копиться ошибки в вычислениях

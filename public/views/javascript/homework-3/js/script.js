@@ -59,7 +59,7 @@
 //------------------------------------------
 // alert(alert(1) || 2 || alert(3)); //FIRST ALERT WILL SHOW "1" AND RETURN UNDEFINED AND IT'S NOT TRUE. THEN 2 IS TRUE AND IT'S DISPLAYED
 //------------------------------------------
-// alert(alert(1) && alert(2)); FIRST ALERT WILL SHOW "1" AND RETURNS UNDEFINED. AND && STOPS AFTER alert(1)
+// alert(alert(1) && alert(2)); FIRST GOES && COMPARISON AND IT RETURNS 3. THEN null || 3 RETURNS 3 AND STOPS.
 //------------------------------------------
 // alert(null || 2 && 3 || 4); // SHOW 3 because that expression null || 2 false, and that expression 3 || 4 stumbles on the "truth" and return 3 , false && 3 return 3 and alert show him
 //------------------------------------------
