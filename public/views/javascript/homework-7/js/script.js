@@ -35,13 +35,13 @@
 // let menu = {};
 
 // function sumSalary (obj) {
-//   let sumSalary = 0;
+//   let sum = 0;
 
 //   for (let key in obj) {
-//     sumSalary += obj[key];
+//     sum += obj[key];
 //   }
 
-//   return sumSalary;
+//   return sum;
 // }
 // console.log(sumSalary(menu));
 // -----------------------------------------------
@@ -54,20 +54,20 @@
 
 // let menu = {};
 
-// function maxSalaryName (obj) {
-//   let maxSalary = 0;
-//   let nameSalary = '';
+// function getMaxSalaryPersonName (obj) {
+//   let max = 0;
+//   let maxName = '';
 
 //   for (let key in obj) {
 //     if (maxSalary < obj[key]) {
-//       maxSalary = obj[key];
-//       nameSalary = key;
+//       max = obj[key];
+//       maxName = key;
 //     }
 //   }
 
-//   return nameSalary;
+//   return maxName;
 // }
-// console.log(maxSalaryName(salaries));
+// console.log(getMaxSalaryPersonName(salaries));
 // -----------------------------------------------
 // let salaries = {
 //   'Вася': 900,
@@ -93,35 +93,15 @@
 // console.log(isNumeric('344px'));
 // console.log(multiplyNumeric(salaries));
 // -----------------------------------------------
-// (function () {
-//   function strReverse (str) {
-//     let newString = '';
-//     for (let i = str.length - 1; i >= 0; i -= 1) {
-//       newString += str[i];
-//     }
-//     console.log(newString);
-//   }
-//   strReverse('Some string');
-// }());
-// -----------------------------------------------
-var obj1 = {};
-var obj2 = {};
-
-function compasionObject (obj1, obj2) {
-  var keysobj1 = Object.keys(obj1);
-  var keysobj2 = Object.keys(obj2);
-  if (keysobj1.length != keysobj2.length) {
-    return false;
+(function () {
+  function strReverse (str) {
+    let newString = '';
+    for (let i = str.length - 1; i >= 0; i -= 1) {
+      newString += str[i];
+    }
+    return newString;
   }
-  return !keysobj1.filter(function (key) {
-      if (typeof obj1[key] == "object" || Array.isArray(obj1[key])) {
-        return !Object.equals(obj1[key], obj2[key]);
-      } else {
-        return obj1[key] !== obj2[key];
-      }
-    })
-    .length;
-
-}
-console.log(compasionObject(obj1, obj2));
+  console.log(strReverse('Some string'));
+}());
+// -----------------------------------------------
 // -----------------------------------------------
