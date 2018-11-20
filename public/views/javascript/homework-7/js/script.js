@@ -59,7 +59,7 @@
 //   let maxName = '';
 
 //   for (let key in obj) {
-//     if (maxSalary < obj[key]) {
+//     if (max < obj[key]) {
 //       max = obj[key];
 //       maxName = key;
 //     }
@@ -93,15 +93,92 @@
 // console.log(isNumeric('344px'));
 // console.log(multiplyNumeric(salaries));
 // -----------------------------------------------
+// (function () {
+//   function strReverse (str) {
+//     let newString = '';
+//     for (let i = str.length - 1; i >= 0; i -= 1) {
+//       newString += str[i];
+//     }
+//     return newString;
+//   }
+//   console.log(strReverse('Some string'));
+// }());
+// -----------------------------------------------
+// let obj1 = {
+//   'name': 'Alex',
+//   'age': 18,
+// };
+// let obj2 = {
+//   'name': 'Alex',
+//   'age': 18,
+//   c: 78
+// };
+// (function () {
+//     function compareObjects (a, b) {
+//       if (count !== count2) {
+//         return false;
+//       }
+//       for (let key in a) {
+//         if (key) {
+//           compareObjects(a, b + 1)
+//         } else {
+//           if (a['key'] !== b['key']) {
+//             return false;
+//           }
+//         }
+
+//       }
+
+//       return true;
+//     }
+// -----------------------------------------------
+// (function () {
+//   function drawArea (N) {
+//     let j = '@';
+//     let k = '-';
+
+//     for (let i = 1; i <= N; i += 1) {
+//       if (i === 1 || i === N) {
+//         console.log(i + j.repeat(N));
+//       } else {
+//         console.log(i + j + k.repeat(N - 2) + j);
+//       }
+//     }
+//   }
+//   drawArea(7); // -> http://prntscr.com/jpobhn
+// }());
+// -----------------------------------------------
 (function () {
-  function strReverse (str) {
-    let newString = '';
-    for (let i = str.length - 1; i >= 0; i -= 1) {
-      newString += str[i];
+  function comparisonString (str1, str2) {
+    let len = Math.max(str1.length, str2.length);
+    let sum1 = 0;
+    let sum2 = 0;
+
+    for (let i = 0; i < len; i += 1) {
+      sum1 += str1.charCodeAt(i) || 0;
+      sum2 += str2.charCodeAt(i) || 0;
     }
-    return newString;
+
+    return sum1 === sum2;
   }
-  console.log(strReverse('Some string'));
+  console.log(comparisonString('clock', 'lockc'));; // -> true.
+  console.log(comparisonString('tree', 'three')); // -> false.
+  console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
 }());
 // -----------------------------------------------
-// -----------------------------------------------
+// function reduceRight (arr, callback, initialValue) {
+//   const len = arr.length;
+
+//   let acc = initialValue === undefined ? arr[len - 1] : initialValue;
+//   let i = initialValue === undefined ? len - 2 : len -1;
+
+//   for(; i >= 0; i -= 1) {
+//     acc = callback(acc, arr[i], i);
+//   }
+
+//   return acc;
+// }
+// console.log(reduceRight([1, 2, 3], function (acc, next) {
+//   return acc + next;
+// }));
+//---------------------------------------------------
