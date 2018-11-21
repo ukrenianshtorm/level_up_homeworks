@@ -109,7 +109,12 @@ let obj1 = {
   'age': 18,
   'Date': {
     'user': 1,
-  }
+    'user2': 2,
+  },
+  'Time': {
+    'wight': '10px',
+    'height': '12px',
+  },
 };
 let obj2 = {
   'name': 'Alex',
@@ -117,7 +122,11 @@ let obj2 = {
   'Date': {
     'user': 1,
     'user2': 2,
-  }
+  },
+  'Time': {
+    'wight': '10px',
+    'height': '22px',
+  },
 };
 
 function compareObjects (a, b) {
@@ -126,24 +135,28 @@ function compareObjects (a, b) {
   let count2 = 0;
 
   for (key in a) {
+    console.log(key + ': ' + a[key]);
     count1 += 1;
   }
   for (key in b) {
+    console.log(key + ': ' + b[key]);
     count2 += 1;
   }
 
   if (count1 !== count2) {
+    console.log(count1 !== count2);
     return false;
   }
   for (key in a) {
     if (typeof a[key] === 'object') {
       return compareObjects(a[key], b[key]);
     } else {
+      console.log(a[key]);
+      console.log(b[key]);
       if (a[key] !== b[key])
         return false;
     }
   }
-
   return true;
 }
 
