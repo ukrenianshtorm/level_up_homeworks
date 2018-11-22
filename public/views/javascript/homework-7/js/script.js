@@ -128,50 +128,42 @@ let obj2 = {
     'height': '22px',
   },
 };
-
 function compareObjects (a, b) {
-  let key = '';
   let count1 = 0;
   let count2 = 0;
 
-  for (key in a) {
-    console.log(key + ': ' + a[key]);
+  for (let key in a) {
     count1 += 1;
   }
-  for (key in b) {
-    console.log(key + ': ' + b[key]);
+  for (let key in b) {
     count2 += 1;
   }
 
   if (count1 !== count2) {
-    console.log(count1 !== count2);
     return false;
   }
-  for (key in a) {
+  for (let key in a) {
     if (typeof a[key] === 'object') {
-      return compareObjects(a[key], b[key]);
+      compareObjects(a[key], b[key]);
     } else {
-      console.log(a[key]);
-      console.log(b[key]);
       if (a[key] !== b[key])
         return false;
     }
   }
   return true;
 }
-
 console.log(compareObjects(obj1, obj2));
 // -----------------------------------------------
 // (function () {
-//   function drawArea (N) {
-//     let j = '@';
-//     let k = '-';
+//   function drawArea (n) {
+//     let j = ' @ ';
+//     let k = ' - ';
 
-//     for (let i = 1; i <= N; i += 1) {
-//       if (i === 1 || i === N) {
-//         console.log(i + j.repeat(N));
+//     for (let i = 1; i <= n; i += 1) {
+//       if (i === 1 || i === n) {
+//         console.log(i + j.repeat(n));
 //       } else {
-//         console.log(i + j + k.repeat(N - 2) + j);
+//         console.log(i + j + k.repeat(n - 2) + j);
 //       }
 //     }
 //   }
