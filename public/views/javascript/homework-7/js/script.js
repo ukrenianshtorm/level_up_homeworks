@@ -104,55 +104,56 @@
 //   console.log(strReverse('Some string'));
 // }());
 // -----------------------------------------------
-let obj1 = {
-  'name': 'Alex',
-  'age': 18,
-  'Date': {
-    'user': 1,
-    'user2': 2,
-  },
-  'Time': {
-    'wight': '10px',
-    'height': '12px',
-  },
-};
-let obj2 = {
-  'name': 'Alex',
-  'age': 18,
-  'Date': {
-    'user': 1,
-    'user2': 2,
-  },
-  'Time': {
-    'wight': '10px',
-    'height': '22px',
-  },
-};
-function compareObjects (a, b) {
-  let count1 = 0;
-  let count2 = 0;
+// let obj1 = {
+//   'name': 'Alex',
+//   'age': 18,
+//   'Date': {
+//     'user': 1,
+//     'user2': 2,
+//   },
+//   'Time': {
+//     'wight': '10px',
+//     'height': '12px',
+//   },
+// };
+// let obj2 = {
+//   'name': 'Alex',
+//   'age': 18,
+//   'Date': {
+//     'user': 1,
+//     'user2': 2,
+//   },
+//   'Time': {
+//     'wight': '10px',
+//     'height': '12px',
+//   },
+// };
 
-  for (let key in a) {
-    count1 += 1;
-  }
-  for (let key in b) {
-    count2 += 1;
-  }
+// function compareObjects (a, b) {
+//   let count1 = 0;
+//   let count2 = 0;
 
-  if (count1 !== count2) {
-    return false;
-  }
-  for (let key in a) {
-    if (typeof a[key] === 'object') {
-      compareObjects(a[key], b[key]);
-    } else {
-      if (a[key] !== b[key])
-        return false;
-    }
-  }
-  return true;
-}
-console.log(compareObjects(obj1, obj2));
+//   for (let key in a) {
+//     count1 += 1;
+//   }
+//   for (let key in b) {
+//     count2 += 1;
+//   }
+//   if (count1 !== count2) {
+//     return false;
+//   }
+//   for (let key in a) {
+//     if (typeof a[key] === 'object') {
+//       if (!compareObjects(a[key], b[key])) {
+//         return false;
+//       }
+//     } else if (a[key] !== b[key]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(compareObjects(obj1, obj2));
 // -----------------------------------------------
 // (function () {
 //   function drawArea (n) {
@@ -170,23 +171,22 @@ console.log(compareObjects(obj1, obj2));
 //   drawArea(7); // -> http://prntscr.com/jpobhn
 // }());
 // -----------------------------------------------
-// (function () {
-//   function comparisonString (str1, str2) {
-//     let len = Math.max(str1.length, str2.length);
-//     let sum1 = 0;
-//     let sum2 = 0;
-
-//     for (let i = 0; i < len; i += 1) {
-//       sum1 += str1.charCodeAt(i) || 0;
-//       sum2 += str2.charCodeAt(i) || 0;
-//     }
-
-//     return sum1 === sum2;
-//   }
-//   console.log(comparisonString('clock', 'lockc'));; // -> true.
-//   console.log(comparisonString('tree', 'three')); // -> false.
-//   console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
-// }());
+(function () {
+  function comparisonString (str1, str2) {
+    if (str1.length !== str2.length) {
+      return false;
+    }
+    for (let i = 0; i < str1.length; i += 1) {
+      if (str2.indexOf(str1[i]) === -1) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(comparisonString('clock', 'lockc'));; // -> true.
+  console.log(comparisonString('tree', 'three')); // -> false.
+  console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
+}());
 // -----------------------------------------------
 // function reduceRight (arr, callback, initialValue) {
 //   const len = arr.length;
