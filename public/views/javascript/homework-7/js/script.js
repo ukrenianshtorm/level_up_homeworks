@@ -180,6 +180,7 @@
       if (str2.indexOf(str1[i]) === -1) {
         return false;
       }
+      pos
     }
     return true;
   }
