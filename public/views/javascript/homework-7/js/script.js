@@ -172,15 +172,18 @@
 // }());
 // -----------------------------------------------
 (function () {
-  function comparisonString (str1, str2) {
+  function comparisonString(str1, str2) {
+    let pos = 0;
+
     if (str1.length !== str2.length) {
       return false;
     }
     for (let i = 0; i < str1.length; i += 1) {
-      if (str2.indexOf(str1[i]) === -1) {
+      pos = str2.indexOf(str1[i]);
+      if (!~pos) {
         return false;
       }
-      pos
+      str2 = str2.slice(0, pos) + str2.slice(pos + 1);
     }
     return true;
   }
