@@ -190,8 +190,6 @@
   console.log(comparisonString('clock', 'lockc'));; // -> true.
   console.log(comparisonString('tree', 'three')); // -> false.
   console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
-  console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
-  console.log(comparisonString('mttudd', 'dutmtd')); // -> true.
 }());
 // -----------------------------------------------
 // function reduceRight (arr, callback, initialValue) {
